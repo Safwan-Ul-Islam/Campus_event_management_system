@@ -66,14 +66,36 @@ $conn->close();
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-image: url('IMG_3916.jpg');
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size:cover ; 
+    text-align:center;
+    width: 1500x;
+    height: 800px;
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    
         }
+
+        /*width: 80%;
+    margin: 20px auto;
+    background-color: #ffffffa4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;*/
         .container {
-            width: 300px;
-            margin: 0 auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+            width: 30%; /* Adjusted width for responsiveness */
+    max-width: 600px; /* Added max-width for responsiveness */
+    margin : 20px auto; /* Centering the container horizontally */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffffa4;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
         }
         .container h2 {
             text-align: center;

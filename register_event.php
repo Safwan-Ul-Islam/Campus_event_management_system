@@ -10,14 +10,20 @@
             background-color: #f0f0f0;
             margin: 0;
             padding: 20px;
+            background-image: url('IMG_4489.jpg');
+            background-position: center ;
+            background-repeat: no-repeat;
+    background-size: cover ;
+            
         }
         form {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
-            margin: 0 auto;
+            width: 80%;
+    margin: 20px auto;
+    background-color: #ffffffa4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
         }
         label, input {
             display: block;

@@ -1,4 +1,18 @@
-<?php
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Page</title>
+    <link rel="stylesheet" href="student.css"> <!-- Link to your CSS file -->
+    <style>
+        /* Additional inline styles if needed */
+    </style>
+</head>
+<body>
+    <div class="container">
+    <?php
 // Ensure you have the student ID from somewhere, e.g., from a login process or another form of authentication
 $student_id = 1; // Replace with the actual student ID, or retrieve it from your application's logic
 
@@ -16,90 +30,11 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            position: relative; /* Ensure the container is relative for absolute positioning of logout button */
-        }
-        h2 {
-            text-align: center;
-        }
-        .event-list {
-            margin-bottom: 20px;
-        }
-        .event-item {
-            background-color: #f9f9f9;
-            padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 10px;
-        }
-        .form-group {
-            margin-bottom: 10px;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        .form-group textarea {
-            width: 100%;
-            padding: 8px;
-            box-sizing: border-box;
-            resize: vertical;
-        }
-        .form-group input[type="submit"] {
-            padding: 10px;
-            background-color: #007bff;
-            border: none;
-            border-radius: 5px;
-            color: #fff;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        .form-group input[type="submit"]:hover {
-            background-color: #0056b3;
-        }
-        .registered-events {
-            margin-top: 20px;
-        }
-        /* Logout button styles */
-        .logout-btn {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-        }
-        .logout-btn button {
-            padding: 8px 16px;
-            background-color: #ff4444;
-            border: none;
-            border-radius: 5px;
-            color: white;
-            font-size: 14px;
-            cursor: pointer;
-        }
-        .logout-btn button:hover {
-            background-color: #cc0000;
-        }
+
     </style>
 </head>
 <body>
-    <div class="container">
+    
         <div class="logout-btn">
             <form action="logout.php" method="post">
                 <button type="submit">Logout</button>
@@ -196,3 +131,8 @@ if ($conn->connect_error) {
     </div>
 </body>
 </html>
+
+    </div>
+</body>
+</html>
+
